@@ -22,3 +22,20 @@ code {
     flex-direction: column;
     justify-content: space-between;
 }
+
+ul {
+    padding: 0;
+    margin: .5rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li button {
+    appearance: none;
+    background: none;
+    border: none;
+}
