@@ -1,14 +1,9 @@
 import Product from "./Product"
 
-export default function ProductList(props) {
+export default function ProductList({products}) {
 return (
-<section>
-<Product/>
-<Product/>
-<Product/>
-<Product/>
-<Product/>
-<Product/>
+<section className="ProductListGrid">
+{products.map(product => <Product {...product}/>)}
 </section>
 )
 }
