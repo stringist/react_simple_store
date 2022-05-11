@@ -1,3 +1,8 @@
 export default function CheckoutForm() {
-return (<form>
-</form>)}
+  return (
+    <div>
+      <form>
+<input type="text" /></form>
+    </div>
+  );
+}

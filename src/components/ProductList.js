@@ -2,13 +2,13 @@ import Product from "./Product"
 
 export default function ProductList() {
 return (
-<ul>
+<section>
 <Product/>
 <Product/>
 <Product/>
 <Product/>
 <Product/>
 <Product/>
-</ul>
+</section>
 )
 }
