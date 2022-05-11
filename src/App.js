@@ -6,6 +6,7 @@ import styles from "./App.module.css";
 
 function App() {
   const [products, setProducts] = useState([]);
+const [basket, setBasket] = useState([]);
   useEffect(() => {
     async function getProducts() {
       const res = await fetch("https://kea-alt-del.dk/t7/api/products");
@@ -18,8 +19,8 @@ function App() {
   return (
     <div className={styles.App}>
       <Nav />
-      <ProductList products={products}/>
-      <BasketContainer />
+      <ProductList products={products} setBasket={setBasket}/>
+      <BasketContainer setBasket={setBasket} basket={basket}/>
     </div>
   );
 }

@@ -1,8 +1,8 @@
-export default function Basket() {
+export default function Basket(props) {
   return (
     <div>
       <ul>
-        <li>Stuff</li>
+       <li>{props.productdisplayname}</li>
       </ul>
     </div>
   );

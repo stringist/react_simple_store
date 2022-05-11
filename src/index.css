@@ -16,3 +16,9 @@ code {
     /* place-items: center; */
     padding: 3rem;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
