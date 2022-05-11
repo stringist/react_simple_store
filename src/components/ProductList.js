@@ -1,6 +1,6 @@
 import Product from "./Product"
 
-export default function ProductList() {
+export default function ProductList(props) {
 return (
 <section>
 <Product/>
