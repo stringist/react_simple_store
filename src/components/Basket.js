@@ -3,7 +3,7 @@ export default function Basket(props) {
     props.setBasket((old) => old.filter((item) => item.id !== id));
   }
   const initialValue = 0;
-  const sumWithInital = props.basket.reduce((prevValue, curValue) => prevValue + curValue.price, initialValue);
+  const sumWithInital = props.basket.reduce((prevValue, curValue) => prevValue + curValue.amount * curValue.price, initialValue);
   console.log(props);
   return (
     <div>

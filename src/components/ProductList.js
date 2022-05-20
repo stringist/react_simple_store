@@ -1,9 +1,11 @@
-import Product from "./Product"
+import Product from "./Product";
 
-export default function ProductList({products, setBasket}) {
-return (
-<section className="ProductListGrid">
-{products.map(product => <Product product={product} key={product.id} setBasket={setBasket}/>)}
-</section>
-)
+export default function ProductList({ products, setBasket, basket }) {
+  return (
+    <section className="ProductListGrid">
+      {products.map((product) => (
+        <Product product={product} key={product.id} basket={basket} setBasket={setBasket} />
+      ))}
+    </section>
+  );
 }
